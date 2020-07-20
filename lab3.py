@@ -1,15 +1,19 @@
 # python3.6  
 # coding: utf-8  
 # store the human preproinsulin sequence in a variable called preproinsulin:  
-preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"  
+preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"
+
 # store the remaining sequence elements of human insulin in variables:  
 lsInsulin = "malwmrllpllallalwgpdpaaa"  
 bInsulin = "fvnqhlcgshlvealylvcgergffytpkt"  
 aInsulin = "giveqcctsicslyqlenycn"  
-cInsulin = "rreaedlqvgqvelgggpgagslqplalegslqkr"  
+cInsulin = "rreaedlqvgqvelgggpgagslqplalegslqkr"
+
+# set insulin to equal BInsulin plus Ainsulin together  fvnqhlcgshlvealylvcgergffytpkt
 insulin = bInsulin + aInsulin
 pKR = {'y': 10.07,'c': 8.18,'k':10.53,'h':6.00,'r':12.48,'d':3.65,'e':4.25} 
 
+#
 float(insulin.count('y'))
 seqCount = ({x: float(insulin.count(x)) for x in ['y','c','k','h','r','d','e']})
 pH = 0
