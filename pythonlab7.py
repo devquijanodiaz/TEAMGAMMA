@@ -28,3 +28,7 @@ commandArgument='-x'
 # outping to screen Gathering active process information with the command=ps and commandArgument=-x
 print(f'Gathering active process information with command : {command} {commandArgument}')
 subprocess.run([command,commandArgument])
+
+#Subprocess.run() is better than os.system(). For saftey: Developers often pass an input string os.sytem() without checking the actual commands. 
+#Malicious users can pass in a string some stuff. Seperate process: subprocess.run() is implemented by a class called popen that is exceuted as a seperate.
+#Additional functionality: Because subprocess.run() is realy the Popen class, it has new useful methods like poll(), wait(), and terminate()
