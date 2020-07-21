@@ -1,0 +1,27 @@
+<The insert statement>
+
+* Permits you to insert one or more rows into a table. 
+• First, specify the table name and a list of comma-separated columns inside parentheses after the INSERT INTO clause.
+• Then put a comma-separated list of values of the corresponding columns inside the parentheses following the VALUES keyword.
+• The number of columns and values must be the same. In addition, the positions of columns must correspond with the positions of their values.
+
+
+
+<nulls>
+* Basic premise of an RDBMS is the concept of optional columns 
+* NULL means ’not applicable’ or ’unknown’, different from zero or blank 
+* If NULL is in the database, it means that there is no value for that field in the database Null equal to nothing, not even itself 
+* 5 + null = null
+* null = null is FALSE
+* If a column was created with a NOT NULL clause, you must put in a value when doing a SELECT; otherwise, an error message will appear
+
+
+
+
+<importing a CSV>
+• Verify: 
+  – CSV file has data that matches with the number of columns of the table and the type of data in each column.
+• Create a table in MySQL with the table name that corresponds to the CSV file you want to import.
+• Import through commands in either of these ways:
+  – Make sure that the first row of the CSV file is ignored by typing \n as they contain the column headings, which are not considered identifiers.
+  – Create a new version of the CSV file without the header column titles. Then replace the empty strings with \n which indicates NULL. Then move CSV file into a directory that MySQL can open.

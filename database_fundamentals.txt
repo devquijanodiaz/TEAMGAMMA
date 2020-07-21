@@ -1,0 +1,44 @@
+differenc between database, flat file, spreadsheet
+
+database: more flexible, data consistency, more secure, support DML and DDL, less data redundancy, queries
+flat file: less flexible, no data consistency, less secure, no DML and DDL, more data redundancy
+spreadsheet: similar to excel, hence graphing and charting 
+
+
+
+SQL vs NoSQL
+SQL:
+Structured Query Language Very rigid schema
+Run transactional and/or analytical queries
+Used primarily in relational databases
+Easily update, delete, or add to existing databases
+Uses vertical scaling, meaning changing the resources (CPU, RAM, etc.) inside of the computer or VM to fit the needs of the database
+
+NoSQL: Non-relational or distributed database system
+dynamic schema
+for hierarchical data storage
+not so good for complex queries 
+Horizontally scalable
+
+
+
+Database management system (DBMS): software that provides database functionality
+* Define the database structure
+* Enter, modify, and delete data
+* Retrieve data
+* Restrict access to data 
+
+
+
+Strategies for Operating in Cloud Environments
+* Sharding:
+Especially important when running MySQL in a cloud
+environment, as it partitions the database into smaller, more manageable parts (shards)
+* Caching:
+Saves on loading time by ensuring that data stored on your machine from a website or app is readily available the next time you access it
+* NosQL:
+Uses different types of data models, e.g. graph, document, and key-value for large data stores in cloud and web applications 
+
+
+
+
