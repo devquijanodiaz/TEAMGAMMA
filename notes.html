@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<h1 ALIGN=CENTER>SQl notes</h1> 
+<p> A schema is a collection of database objects including tables, views, triggers, stored procedures, indexes, etc. </p>
+<p>  A schema is associated with a username which is known as the schema owner </p>
+<p>  who is the owner of the logically related database objects.</p> 
+<img src="https://i.stack.imgur.com/cBg5l.png" alt="schema.jpg" width="659" height="470">
+<p> This is an example of a schema </p>  
+<p> With the schema in hand. We can use the data to ask for certain questions</p> 
+<p> For example 'Tell me how many books there are on computer programming' or </p> 
+<p> 'How many Rolling Stones albums were produced before 1980?'</p> 
+<p> When we ask the database for information we are performing a task called a query</p> 
+<p> A query is simply a request for data within certain parameters.</p>  
+<p> This is very useful than having to sift to massive logs of data looking for certain tiny details. </p>
+<h2 ALIGN=CENTER>SQl Commands</h2>  
+<p> The SELECT statement is used to select data from a database.</p>
+<p>The data returned is stored in a result table, called the result-set.</p> 
+<img src="https://i.imgur.com/voNXhD8.png"alt="select.jpg" width="778" height="293"> 
+<p> The above example is a show case of the usage of the select command </p> 
+<p> You can also perform a bunch of other tasks with the select command  </p>
+<p> as in specifying certain elements depending on what tables you have in your schema </o> 
+<p>The WHERE clause is used to filter records.</p>
+<p>The WHERE clause is used to extract only those records that fulfill a specified condition.</p> 
+<img src="https://i.imgur.com/ZASw1X4.png"alt="where.jpg" width="733" height="141">  
+<p> In this example, we are selecting from the column of city where the variable matches the country of Mexico</o> 
+<img src="https://i.imgur.com/SbhK8cW.png"alt="where.jpg" width="733" height="70">   
+<p> In this example, we are searching a similar search for only where the id of the customer equals to 1. 
+<p>SQL requires single quotes around text values (most database systems will also allow double quotes).</p>
+<p>However, numeric fields should not be enclosed in quotes: </p> 
+<p>The GROUP BY Statement in SQL is used to arrange identical data into groups with the help of some functions.</p>  
+<p> i.e if a particular column has same values in different rows then it will arrange these rows in a group.</o> 
+<p>SELECT SUBJECT, YEAR, Count(*)</p>
+<p>FROM Student</p>
+<p>GROUP BY SUBJECT, YEAR;</p>  https://i.imgur.com/HhI1ISA.png
+<p>This would give the following outcome</p>
+<img src="https://i.imgur.com/iPXmphP.png"alt="subject.jpg" width="300" height="100">     
+<p>The HAVING clause is often used with the GROUP BY clause in the SELECT statement.</p> 
+<p>If you use a HAVING clause without a GROUP BY clause, the HAVING clause behaves like the WHERE clause.</p>
+<p> An easy way to understand the difference is that WHERE clause introduces a condition on individual rows;</p> 
+<p> HAVING clause introduces a condition on aggregations,</p>   
+<p> i.e. results of selection where a single result, such as count, average, min, max, or sum,</p> 
+<p>has been produced from multiple rows</p>
+<img src= "https://cdn.sqltutorial.org/wp-content/uploads/2016/03/employees_dependents_tables.png"alt="employee.png" width="495" height="270">   
+<p>Using this example Schema, to get the managers and their direct reports, </p>
+<p>you use the GROUP BY clause to group employees by the managers and </p> 
+<p> use the COUNT function to count the direct reports.</p> 
+<img src="https://i.imgur.com/HhI1ISA.png"alt="where.jpg" width="914" height="211"> 
+<p>You would get the following result</p> 
+<img src="https://cdn.sqltutorial.org/wp-content/uploads/2016/03/SQL-HAVING-example.png"alt="where.jpg" width="321" height="111">  
+<p>The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+<p>The ORDER BY keyword sorts the records in ascending order by default.</p>  
+<p>To sort the records in descending order, use the DESC keyword.</p> 
+<p>To sort the records in ascending order, use the ASC keyword.</p>  
+<p>The following is an example of this query </p> 
+<img src="https://i.imgur.com/sMpZ0rq.png"alt="where.jpg" width="894" height="55">   
+<p>This query would reverse the countries going from the bottomost to the top</p> 
+
+<h1 ALIGN=CENTER>Additional notes</h1>  
+<p>SQL is case sensitive like all of the other stuff we were doing, a off note can give you a syntax error</o> 
+</html>
