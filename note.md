@@ -240,6 +240,7 @@ that the relationship is between different instances of the same entity type.
 Here is an easy way to understand this concept 
 
 ![recursive.jpg](https://i.stack.imgur.com/DzIwq.png) 
+ 
 In this example A manager supervises a subordinate. Every employee can have a supervisor in their department and there  
 
 can be at most one boss for each employee however one employee may be the boss of more than one employee. It's almost  
