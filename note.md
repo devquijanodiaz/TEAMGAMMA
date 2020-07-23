@@ -149,6 +149,7 @@ instance, customers make orders, and orders contain items. These relationships n
 In a one-to-one relationship, one record in a table is associated with one and only one record in another table. For example, in a school database, each student has only one student ID, and each student ID is assigned to only one person.
 
 A one-to-one relationship looks like this in the relationships graph: 
+ 
 ![onetoone.jpg](https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/one-to-one.png) 
   
 In this example, the key field in each table, Student ID, is designed to contain unique values. In the Students table, the Student ID field is the primary key; in the Contact  
