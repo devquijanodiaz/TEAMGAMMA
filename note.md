@@ -1,4 +1,5 @@
 
+
 # SQl notes
 
 A schema is a collection of database objects including tables, views, triggers, stored procedures, indexes, etc.
@@ -170,13 +171,13 @@ Basically only one element in Table A can only be linked to one element on Table
 *Items can have descriptions in many languages.
  
 *In these cases we would need to create "One to Many" relationships. Here is an example:
- 
-![onetomany.jpg](https://cdn.tutsplus.com/net/uploads/legacy/538_sql3/ss_3.png)   
- 
- Notice how more than one order_id is attached to one customer_id, but an order can only belong to one customer. 
   
-![onetomany.jpg](https://cdn.tutsplus.com/net/uploads/legacy/538_sql3/graph_2.png)    
+![onetomany.jpg](https://i.imgur.com/spdnqZP.png)   
  
+Notice how more than one order_id is attached to one customer_id, but an order can only belong to one customer. 
+ 
+![onetomany.jpg](https://i.imgur.com/NDUScyY.png)     
+
  ### Many to Many Relationships 
 In some cases, you may need multiple instances on both sides of the relationship. For example, each order can contain  
 
